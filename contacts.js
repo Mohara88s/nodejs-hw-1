@@ -3,26 +3,28 @@ const path = require("path")
 
 const contactsPath = path.join(__dirname, "db", "contacts.json");
 
-function listContacts() {
-   
-  }
+const listContacts = async() => {
+  const data = await fs.readFile(contactsPath);
+  const contacts = JSON.parse(data);
+  return contacts;
+ }
   
-  function getContactById(contactId) {
-   
-  }
+  // function getContactById(contactId) {
+
+  // }
   
-  function removeContact(contactId) {
+  // function removeContact(contactId) {
    
-  }
+  // }
   
-  function addContact(name, email, phone) {
+  // function addContact(name, email, phone) {
     
-  }
+  // }
   const contactsFunctions = {
     listContacts,
-    getContactById,
-    removeContact,
-    addContact
+    // getContactById,
+    // removeContact,
+    // addContact
   };
 
 module.exports = contactsFunctions;

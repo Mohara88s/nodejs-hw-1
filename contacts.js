@@ -4,8 +4,8 @@ const path = require("path")
 const contactsPath = path.join(__dirname, "db", "contacts.json");
 
 const updateContacts = async (contacts) => {
-  const newContacts = await fs.writeFile(contactsPath, JSON.stringify(contacts));    
-  return newContacts;
+  const newContactsList = await fs.writeFile(contactsPath, JSON.stringify(contacts));    
+  return newContactsList;
 }
 
 const listContacts = async() => {

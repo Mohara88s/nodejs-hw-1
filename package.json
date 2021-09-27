@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Mohara88s/nodejs-hw-1#readme",
   "dependencies": {
     "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "commander": "^8.2.0",
     "fs": "0.0.1-security",
     "path": "^0.12.7"
   },
